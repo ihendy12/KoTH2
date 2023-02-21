@@ -1,5 +1,6 @@
 package org.example;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Hero {
 
@@ -44,9 +45,16 @@ public class Hero {
     //Constructors
 
 
-    public Hero(String name) {
-        this.name = name;
+    public Hero() {
+
         this.healthBar = getHealthBar();
         this.baseAttack = getBaseAttack();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter your Heroes name: ");
+        this.name = name = scanner.nextLine();
+        System.out.println("Congratulations, your heroes name is: " + name);
+
     }
+
+
 }

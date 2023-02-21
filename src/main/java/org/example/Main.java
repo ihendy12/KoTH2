@@ -1,20 +1,32 @@
 package org.example;
 
+import java.util.Random;
+
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Hello world!");
 
-        Hero hero = new Hero("Ian");
-        Zombie zombie = new Zombie();
+        Hero hero = new Hero();
 
-    public void run {
-            System.out.println("Hero " + hero.getName() + " attacked for " + hero.getBaseAttack() + " damage!");
+        System.out.print(hero.getName()+ ", ");
+        int randomOpponent = (int) Math.floor(Math.random() * 3 + 1);
 
-            System.out.println(zombie.getName() + " attacked for " + zombie.getBaseAttack() + " damage!");
+
+        if (randomOpponent == 1){
+            Zombie zombie = new Zombie();
+        } else if (randomOpponent == 2 ){
+            Dragon dragon = new Dragon();
+        } else if (randomOpponent == 3){
+            Werewolf werewolf = new Werewolf();
         }
 
 
 
 
+
+
+
     }
+
+
 }

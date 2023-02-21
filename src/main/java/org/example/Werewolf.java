@@ -2,13 +2,13 @@ package org.example;
 
 import java.util.Random;
 
-public class Zombie {
-    private String name = "The Zombie";
-    private int health = 50;
+public class Werewolf {
+    private String name = "The Werewolf";
+    private int health = 100;
     private int baseAttack;
 
     //Constructor
-    public Zombie(){
+    public Werewolf(){
         this.name = name;
         this.health = getHealth();
         this.baseAttack = getBaseAttack();
@@ -43,3 +43,5 @@ public class Zombie {
         this.baseAttack = baseAttack;
     }
 }
+
+
