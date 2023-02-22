@@ -12,7 +12,7 @@ public class Dragon {
         this.name = name;
         this.health = getHealth();
         this.baseAttack = getBaseAttack();
-        System.out.println("You will be fighting: " + name);
+
     }
 
     Random rand = new Random();
